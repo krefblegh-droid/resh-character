@@ -1,0 +1,7 @@
+{
+  "name": "glyph-check",
+  "version": "1.0.0",
+  "private": true,
+  "description": "See whether a font supports a Unicode character.",
+  "scripts": { "start": "node server.js" }
+}

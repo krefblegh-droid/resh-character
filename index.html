@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Characters</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/characters">Glyph Check</a>
+    <nav>
+      <a class="nav-btn" href="#/characters" data-nav="characters">Characters</a>
+      <button class="nav-btn" id="edit-btn" type="button" data-nav="edit">Edit</button>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <!-- Password dialog, shared by "Edit" and "Add form" -->
+  <div class="modal" id="pw-modal" hidden>
+    <form class="modal-card" id="pw-form" autocomplete="off">
+      <label for="pw-input">Enter the password</label>
+      <input id="pw-input" type="password" required>
+      <p class="error" id="pw-error"></p>
+      <div class="row">
+        <button type="button" class="btn secondary" id="pw-cancel">Cancel</button>
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
